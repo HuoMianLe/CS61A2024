@@ -1,2 +1,2 @@
 # CS61A2024
-The record of CS61A2024
+The answer of CS61A2024
