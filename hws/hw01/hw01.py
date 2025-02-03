@@ -66,9 +66,10 @@ def largest_factor(n):
     1
     """
     "*** YOUR CODE HERE ***"
-    for i in range(n-1, 0, -1):
+    for i in range(n//2,0,-1):
         if n%i==0:
             return i
+
 
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
@@ -90,13 +91,13 @@ def hailstone(n):
     1
     """
     "*** YOUR CODE HERE ***"
-    cnt=1
-    print(n)
+    step=1
     while n!=1:
-        if(n&1):
-            n=n*3+1
+        print(n)
+        if n&1:
+            n=3*n+1
         else:
             n=n//2
-        print(n)
-        cnt+=1
-    return cnt
+        step+=1
+    print(1)
+    return step
